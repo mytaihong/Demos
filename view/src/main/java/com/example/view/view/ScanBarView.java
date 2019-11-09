@@ -29,9 +29,6 @@ public class ScanBarView extends View {
     public ScanBarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
-        init();
-        init();
-        init();
     }
 
 
@@ -42,6 +39,9 @@ public class ScanBarView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        //测量出的宽和高
+        int width = 0;
+        int height = 0;
         // 1. 获取测量模式（Mode）
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
@@ -52,6 +52,17 @@ public class ScanBarView extends View {
         // 3. 通过Mode 和 Size 生成新的SpecMode(这个是由我们给出的尺寸大小和模式生成一个包含这两个信息的int变量，这里这个模式这个参数，传三个常量中的一个)
         int measureSpec=MeasureSpec.makeMeasureSpec(widthSize, widthMode);
         Log.e(TAG,"widthMeasureSpec："+widthMeasureSpec+""+"widthMode："+heightMode+""+"widthSize："+widthSize+""+"width_measureSpec："+measureSpec);
+        if (widthMode==MeasureSpec.EXACTLY){
+
+        }else {
+
+        }
+        if (heightMode==MeasureSpec.EXACTLY){
+
+        }else {
+
+        }
+        setMeasuredDimension(width,height);
     }
 
     @Override
