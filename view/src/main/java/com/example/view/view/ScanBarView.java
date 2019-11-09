@@ -48,6 +48,7 @@ public class ScanBarView extends SurfaceView implements SurfaceHolder.Callback {
     public ScanBarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
+        init();
     }
 
     private void init() {
