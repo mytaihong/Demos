@@ -29,6 +29,7 @@ public class ScanBarView extends View {
     public ScanBarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
+        init();
     }
 
 
