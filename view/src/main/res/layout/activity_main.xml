@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        app:layout_constraintTop_toTopOf="@+id/sbv"
+        app:layout_constraintBottom_toBottomOf="@+id/sbv"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_height="wrap_content"/>
+
 <com.example.view.view.ScanBarView
     android:id="@+id/sbv"
     android:layout_width="300dp"
