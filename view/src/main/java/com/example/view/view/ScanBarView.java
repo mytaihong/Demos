@@ -31,6 +31,7 @@ public class ScanBarView extends View {
         init();
         init();
         init();
+        init();
     }
 
 
