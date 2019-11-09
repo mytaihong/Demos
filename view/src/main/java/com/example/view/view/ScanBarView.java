@@ -30,6 +30,7 @@ public class ScanBarView extends View {
         super(context, attrs, defStyleAttr);
         init();
         init();
+        init();
     }
 
 
