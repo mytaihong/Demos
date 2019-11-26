@@ -1,2 +1,2 @@
-include ':app', ':view'
+include ':app', ':view', ':screenadaptation'
 rootProject.name='Demos'

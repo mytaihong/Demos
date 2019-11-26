@@ -3,6 +3,7 @@ package com.example.view.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.PathMeasure;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.SurfaceView;
@@ -105,6 +106,7 @@ public class TestView extends SurfaceView {
 
         // 设置文字阴影
 //        Paint.setShadowLayer(5,5,5,Color.YELLOW);
+        PathMeasure pathMeasure=new PathMeasure();
     }
 
 
