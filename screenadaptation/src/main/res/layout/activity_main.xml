@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义像素适配-->
+<!--<com.example.screenadaptation.ScreenAdapterLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width = "540px"-->
+<!--        android:background="@android:color/holo_orange_light"-->
+<!--        android:layout_height = "540px"-->
+<!--        android:text="hello world"/>-->
+<!--</com.example.screenadaptation.ScreenAdapterLayout>-->
+
+<!--自定义百分比布局适配-->
+<!--<com.example.screenadaptation.PercentLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:text="Hello World!"-->
+<!--        app:heightPercent="50%"-->
+<!--        app:widthPercent="25%p"-->
+<!--        tools:ignore="MissingPrefix" />-->
+
+<!--</com.example.screenadaptation.PercentLayout>-->
+
+<!--修改density，scaleDensity，densityDpi值 实现-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@color/colorAccent"
+        android:text="MainActivity!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@color/colorAccent"
+        android:text="Hello World!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>
