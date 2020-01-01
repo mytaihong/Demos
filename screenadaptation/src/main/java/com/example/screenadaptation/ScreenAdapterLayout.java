@@ -29,8 +29,8 @@ public class ScreenAdapterLayout extends RelativeLayout {
         if (!flag) {        //防止设置两次而导致计算错误
             flag = true;
             //获取横向和纵向缩放比
-            float scaleX = Utils.getInstance(getContext()).getHorizontalScale();
-            float scaleY = Utils.getInstance(getContext()).getVerticalScale();
+            float scaleX = ScreenadAptationUtils.getInstance(getContext()).getHorizontalScale();
+            float scaleY = ScreenadAptationUtils.getInstance(getContext()).getVerticalScale();
 
             int childCount = getChildCount();
             for (int i = 0; i < childCount; i++) {
